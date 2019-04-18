@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.hanson</groupId>
+    <artifactId>mybatis-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>jdbc_app</module>
+        <module>mybatis-01-helloworld</module>
+        <module>mybatis-02-config</module>
+        <module>mybatis-03-mapper</module>
+        <module>mybatis-04-dynamic-sql</module>
+        <module>mybatis-05-cache</module>
+        <module>mybatis-06-ssm</module>
+        <module>mybatis-07-mbg</module>
+        <module>mybatis-08-principle</module>
+        <module>mybatis-09-plugin</module>
+        <module>mybatis-10-extend</module>
+    </modules>
+
+    <properties>
+        <mybatis.version>3.4.5</mybatis.version>
+        <mysql.version>5.1.45</mysql.version>
+        <log4j.version>1.2.17</log4j.version>
+        <lombok.version>1.18.6</lombok.version>
+        <junit.version>4.12</junit.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>
